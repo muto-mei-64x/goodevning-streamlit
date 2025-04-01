@@ -1,0 +1,13 @@
+services:
+  dev-debug:
+    build:
+      context: .
+      dockerfile: Dockerfile.devdebug
+    ports:
+      - "8083:8083"
+      - "5678:5678"
+    volumes:
+      - ./streamlit_app.py:/app/streamlit_app.py
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
