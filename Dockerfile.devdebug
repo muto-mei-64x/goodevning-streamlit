@@ -12,4 +12,4 @@ ENV ENVIRONMENT=development_debuggable
 
 EXPOSE 8083 5678
 
-ENTRYPOINT ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678", "--wait-for-client", "-m", "streamlit", "run", "gnrl_mast.py", "--server.port=8083", "--server.address=0.0.0.0"]
+ENTRYPOINT ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678", "--wait-for-client", "-m", "streamlit", "run", "streamlit_app.py", "--server.port=8083", "--server.address=0.0.0.0"]

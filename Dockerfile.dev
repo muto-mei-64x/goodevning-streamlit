@@ -13,4 +13,4 @@ ENV ENVIRONMENT=development
 
 EXPOSE 8083
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8083", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8083", "--server.address=0.0.0.0"]
