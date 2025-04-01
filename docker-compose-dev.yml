@@ -1,0 +1,9 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8083:8083"
+    volumes:
+      - ./streamlit_app.py:/app/streamlit_app.py
